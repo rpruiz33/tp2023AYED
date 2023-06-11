@@ -1,0 +1,355 @@
+# depslib dependency file v1.0
+1686055134 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\fila.c
+
+1686234543 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	"navegador.h"
+
+1686152992 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\cola.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+
+1686149593 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\cola.h
+
+1686153122 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\pila.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+
+1686153116 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\pila.h
+
+1686156626 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\sistema.h
+
+1686074154 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\impresora.h
+
+1686142490 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\navegador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"historial.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	"navegador.h"
+
+1686234543 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\sistema.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	"navegador.h"
+	"sistema.h"
+
+1686089544 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\impresora.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+
+1686092651 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\historial.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	"historial.h"
+
+1686092651 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\historial.h
+
+1686142410 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\navegador.h
+
+1686249407 source:c:\users\beto\desktop\tp ayed 2023\ejetpayed2023\cola.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+
+1686249407 c:\users\beto\desktop\tp ayed 2023\ejetpayed2023\cola.h
+
+1686249407 c:\users\beto\desktop\tp ayed 2023\ejetpayed2023\sistema.h
+
+1686249407 c:\users\beto\desktop\tp ayed 2023\ejetpayed2023\impresora.h
+
+1686249407 c:\users\beto\desktop\tp ayed 2023\ejetpayed2023\pila.h
+
+1686249407 source:c:\users\beto\desktop\tp ayed 2023\ejetpayed2023\historial.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	"historial.h"
+
+1686249407 c:\users\beto\desktop\tp ayed 2023\ejetpayed2023\historial.h
+
+1686249407 source:c:\users\beto\desktop\tp ayed 2023\ejetpayed2023\impresora.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+
+1686259016 source:c:\users\beto\desktop\tp ayed 2023\ejetpayed2023\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	"navegador.h"
+
+1686249407 c:\users\beto\desktop\tp ayed 2023\ejetpayed2023\navegador.h
+
+1686249407 source:c:\users\beto\desktop\tp ayed 2023\ejetpayed2023\navegador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"historial.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	"navegador.h"
+
+1686249407 source:c:\users\beto\desktop\tp ayed 2023\ejetpayed2023\pila.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+
+1686249407 source:c:\users\beto\desktop\tp ayed 2023\ejetpayed2023\sistema.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	"navegador.h"
+	"sistema.h"
+
+1686415713 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\ejetpayed2023\cola.c
+	<stdio.h>
+	<stdlib.h>
+	"cola.h"
+
+1686416192 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\ejetpayed2023\cola.h
+
+1686399933 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\ejetpayed2023\sistema.h
+
+1686260495 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\ejetpayed2023\impresora.h
+
+1686399602 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\ejetpayed2023\pila.h
+
+1686260495 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\ejetpayed2023\historial.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	"historial.h"
+
+1686260495 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\ejetpayed2023\historial.h
+
+1686414287 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\ejetpayed2023\impresora.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	"documento.h"
+
+1686362600 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\ejetpayed2023\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+
+1686260495 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\ejetpayed2023\navegador.h
+
+1686265185 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\ejetpayed2023\navegador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"historial.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	"navegador.h"
+
+1686399602 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\ejetpayed2023\pila.c
+	<stdlib.h>
+	"Pila.h"
+
+1686414798 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\ejetpayed2023\sistema.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	"sistema.h"
+
+1686415811 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\ejetpayed2023\documento.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	"documento.h"
+
+1686416156 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp cuatrimestral 2023\ejetpayed2023\documento.h
+
+1686485967 source:c:\users\beto\desktop\tp cuatrimestral 2023\ejetpayed2023\cola.c
+	<stdio.h>
+	<stdlib.h>
+	"cola.h"
+
+1686485967 c:\users\beto\desktop\tp cuatrimestral 2023\ejetpayed2023\cola.h
+
+1686450518 source:c:\users\beto\desktop\tp cuatrimestral 2023\ejetpayed2023\impresora.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	"documento.h"
+
+1686399934 c:\users\beto\desktop\tp cuatrimestral 2023\ejetpayed2023\sistema.h
+
+1686450344 c:\users\beto\desktop\tp cuatrimestral 2023\ejetpayed2023\impresora.h
+	"pila.h"
+
+1686448892 c:\users\beto\desktop\tp cuatrimestral 2023\ejetpayed2023\pila.h
+
+1686486409 c:\users\beto\desktop\tp cuatrimestral 2023\ejetpayed2023\documento.h
+
+1686446200 source:c:\users\beto\desktop\tp cuatrimestral 2023\ejetpayed2023\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+
+1686450197 source:c:\users\beto\desktop\tp cuatrimestral 2023\ejetpayed2023\pila.c
+	<stdlib.h>
+	"pila.h"
+
+1686486409 source:c:\users\beto\desktop\tp cuatrimestral 2023\ejetpayed2023\documento.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	"documento.h"
+
+1686487772 source:c:\users\beto\desktop\tp cuatrimestral 2023\ejetpayed2023\sistema.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	"sistema.h"
+
