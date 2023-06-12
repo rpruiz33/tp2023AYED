@@ -3,7 +3,7 @@
 #include "pila.h"
 struct impresoraE;
 typedef struct impresoraE * Impresora;
-Impresora crearImpresora(char documentos[20],char nombreImpresora[20], int nroImpresora,char modelo[20]);
+Impresora crearImpresora();
 void liberarImpresora(Impresora i);
 void mostrarImpresora(Impresora i);
 void mostrarElementoDesApilado(Pila p);

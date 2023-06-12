@@ -39,6 +39,6 @@ Nodo getSiguiente(Nodo nodo);
 void* obtenerDatoP (Nodo e);
 Nodo getNodoP(Pila pila);
 
-
+int estaVaciaP(Pila pila);
 
 #endif // PILA_H_INCLUDED

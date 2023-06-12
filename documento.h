@@ -6,5 +6,5 @@ typedef struct documentoE *Documento;
 Documento crearDocumento();
 void destruir (Documento d);
 void mostrarDocumento(Documento d);
-int mostrarElementoDesencolado(Cola c);
+int mostrarElementoEncolado(Cola c);
 #endif // DOCUMENTO_H_INCLUDED

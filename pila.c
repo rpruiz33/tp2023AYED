@@ -69,7 +69,10 @@ void * getUltimo(Pila pila){
 void * desapilar(Pila pila){
 
     void * datoADesapilar=NULL;
-
+ if (estaVacia(pila)){
+        printf("\n La pila esta vacia\n");
+        return -1;
+    }
     if(pila->primero!=NULL){
 
             datoADesapilar=getDato(pila->primero);
@@ -154,3 +157,11 @@ return pila->primero;
 
 
 };
+int estaVaciaP(Pila pila) {
+    if (pila == NULL)
+        return -1;
+
+    if (pila->primero == NULL)
+        return 1;
+    return 0;
+}

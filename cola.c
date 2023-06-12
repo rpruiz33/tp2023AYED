@@ -109,14 +109,34 @@ int encolar(Cola cola, void * item) {
 }
 
 
+/*//Función para desencolar un elemento del frente de la cola
+int desencolar(Cola cola) {
+    if (estaVacia(cola))
+        {
+        printf("Error: La cola está vacía\n");
+        return -1; // o cualquier otro valor de error que desees utilizar
+    }
+    Nodo inicio=cola->inicio;
+    int dato = inicio->item;
 
+    cola->inicio = cola->inicio->prox;
+    free(inicio);
+
+
+
+    return dato;
+}
+*/
 
 
 int desencolar(Cola cola) {
     if (cola == NULL)
         return ESTRUCTURA_NO_INICIALIZADA;
-    if (estaVacia(cola))
+    if (estaVacia(cola)){
+        printf("\nError: La cola esta vacia\n");
         return ESTRUCTURA_VACIA;
+    }
+
     Nodo  aux = cola->inicio;
 
     cola->inicio = aux->prox;

@@ -36,13 +36,14 @@ printf("El nombre del documento es %s\n---la fecha de modificacion es %s \n",d->
 
 };
 
-int mostrarElementoDesencolado(Cola c){
-if (getTamanio(c)==0){
+int mostrarElementoEncolado(Cola c){
+if (getTamanio(c)==0)
     return ESTRUCTURA_VACIA;
-}
+
 
 Documento a= *((Documento*)obtenerDato(getNodo(c) ));
 
 mostrarDocumento(a);
 printf("\n");
+return 1;
 };
