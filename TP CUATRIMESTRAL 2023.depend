@@ -372,7 +372,7 @@
 	<string.h>
 	"documento.h"
 
-1686586728 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp2023ayed\sistema.h
+1686614677 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp2023ayed\sistema.h
 
 1686578089 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp2023ayed\impresora.h
 	"pila.h"
@@ -408,10 +408,9 @@
 	<stdlib.h>
 	"pila.h"
 
-1686587540 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp2023ayed\sistema.c
+1686661192 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp2023ayed\sistema.c
 	<stdio.h>
 	<stdlib.h>
-	<string.h>
 	"cola.h"
 	"sistema.h"
 	"impresora.h"

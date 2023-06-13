@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "cola.h"
 #include "sistema.h"
 #include "impresora.h"
@@ -72,14 +71,23 @@ return s;
 
 
 void iniciarSistema(){
-    char nombre[20];
+    char nombre[30];
     char ultimaActualizacion[20];
     int anioLanzamiento;
     int cantidadMemoriaRamMinimaEnGigas;
 
-    printf("\ningrese el nombre del sistema completo ejemplo.. windows 10..CentOS Stream 8\n");
+    printf("\ningrese el nombre del sistema operattivo completo <-- Windows -- Linux -- MacOs -->\n");
     fflush(stdin);
     gets(nombre);
+    int r= validarSistema(nombre);
+    while(r==-1){
+
+        printf("\ningrese de nuevo el nombre del sistema operattivo completo <-- Windows -- Linux -- MacOs -->\n");
+    fflush(stdin);
+    gets(nombre);
+    r= validarSistema(nombre);
+    }
+    printf("\n!!VALIDACION CORRECTA!!!\n");
     printf("\nla ultima fecha de actualiazacion de \n");
     fflush(stdin);
     gets(ultimaActualizacion);
@@ -88,7 +96,10 @@ void iniciarSistema(){
     printf("\ningrese  la cantidad de  Memoria Ram Minima En Gigas\n");
     scanf("%d",&cantidadMemoriaRamMinimaEnGigas);
     crearSistema(nombre,ultimaActualizacion,anioLanzamiento,cantidadMemoriaRamMinimaEnGigas);
-}
+    }
+
+
+
 
 void liberarSistema(Sistema s){
 free(s);
@@ -100,5 +111,22 @@ printf("\nel nombre del sistema es %s\nla fecha de la ultima actualizacion es %s
 
 };
 
+int validarSistema(char nombreSistema[30]){
+int validar=-1;
+if(strcmp(nombreSistema,"Linux")==0){
+    validar=1;
+
+}
+
+if(strcmp(nombreSistema,"Windows")==0){
+    validar=1;
+
+}
 
 
+if(strcmp(nombreSistema,"MacOs")==0){
+    validar=1;
+
+}
+return validar;
+};

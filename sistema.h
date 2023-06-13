@@ -6,5 +6,6 @@ typedef struct sistemaE * Sistema;
 Sistema crearSistema(char nombre[20],char ultimaActualizacion[20], int anioLanzamiento,int cantidadMemoriaRamMinimaEnGigas );
 void liberarSistema(Sistema s);
 void mostrarSistema(Sistema s);
+int validarSistema(char nombreSistema[30]);
 
 #endif // SISTEMA_H_INCLUDED
