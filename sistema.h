@@ -7,5 +7,7 @@ Sistema crearSistema(char nombre[20],char ultimaActualizacion[20], int anioLanza
 void liberarSistema(Sistema s);
 void mostrarSistema(Sistema s);
 int validarSistema(char nombreSistema[30]);
-
+int validarResolucion(char nombreSistema[30]);
+int validarAnioCompra(int anioCompro);
+int validarRam(int cantidadMemoriaRamMinimaEnGigas);
 #endif // SISTEMA_H_INCLUDED

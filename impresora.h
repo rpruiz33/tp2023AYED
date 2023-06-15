@@ -6,6 +6,6 @@ typedef struct impresoraE * Impresora;
 Impresora crearImpresora();
 void liberarImpresora(Impresora i);
 void mostrarImpresora(Impresora i);
-void mostrarElementoDesApilado(Pila p);
+void mostrarElementoApilado(Pila p);
 
 #endif // IMPRESORA_H_INCLUDED

@@ -1,33 +1,27 @@
-
-
+#include <stdio.h>
 #include <stdlib.h>
 #include "pila.h"
 
 
 
 struct PilaE{
-    Nodo primero;
-};
+        Nodo primero;
+    };
 
 
 struct NodoE {
-    void* dato; // dato almacenado
-    struct NodoE *sgte; // puntero al siguiente
-} ;
+        void* dato;
+        struct NodoE *sgte;
+    };
 
 
-///PRIMITIVAS!!!!!!
+
 
 Pila crearPila(){
-
-    ///El constructor, lo de siempre :)
-    Pila pila= malloc(sizeof(struct PilaE));
-
-    pila->primero= NULL;
-
-
-    return pila;
-}
+        Pila pila= malloc(sizeof(struct PilaE));
+        pila->primero= NULL;
+        return pila;
+    };
 
 Pila destruirPila(Pila pila){
 
@@ -36,74 +30,66 @@ Pila destruirPila(Pila pila){
             void* dato=NULL;
             void* nodoEliminar=NULL;
             nodoEliminar=pila->primero;
-            dato=getDato(nodoEliminar);
+            dato=getDatoP(nodoEliminar);
             pila->primero=pila->primero->sgte;
             destruirNodo(nodoEliminar);
         }
         free(pila);
 
        return NULL;
-}
+    };
 
 int pilaVacia(Pila pila){
-    // Una lista está vacía cuando lista->Primero==NULL
-    return (pila->primero==NULL);
-}
+        // Una lista está vacía cuando lista->Primero==NULL
+        return (pila->primero==NULL);
+    };
 
 
 
 void * getUltimo(Pila pila){
 
-    void* datoADesapilar=NULL;
+        void* datoADesapilar=NULL;
 
-    if(pila->primero!=NULL){
+        if(pila->primero!=NULL){
 
-            datoADesapilar=getDato(pila->primero);
-
-
-    }
-    return datoADesapilar;
-}
+            datoADesapilar=getDatoP(pila->primero);
+        }
+        return datoADesapilar;
+    };
 
 
 void * desapilar(Pila pila){
 
-    void * datoADesapilar=NULL;
- if (estaVacia(pila)){
-        printf("\n La pila esta vacia\n");
-        return -1;
-    }
-    if(pila->primero!=NULL){
-
-            datoADesapilar=getDato(pila->primero);
-
-
-
+        void * datoADesapilar=NULL;
+        if (pila == NULL){
+            return -1;
+        }
+        if (estaVaciaP(pila)){
+            printf("\nError: La pila esta vacia\n");
+            system("PAUSE()");
+            system("cls");
+            return -1;
+        }
+        if(pila->primero!=NULL){
+            datoADesapilar=getDatoP(pila->primero);
             void * nodoEliminar=NULL;
-
             nodoEliminar=pila->primero;
-
-
             pila->primero=pila->primero->sgte;
             destruirNodo(nodoEliminar);
-
-
-
-    }
-    return datoADesapilar;
-}
+        }
+        return datoADesapilar;
+    };
 
 
 
 
 
 void apilar(Pila pila, void * dato){
-    // simplemente creamos el nodo, hacemos que el primero de la lista sea
-    // su siguiente y lo ponemos como primero de la lista
-    Nodo nuevoNodo=crearNodo(dato);
-    setSiguiente(nuevoNodo,pila->primero);
-    pila->primero=nuevoNodo;
-}
+
+        Nodo nuevoNodo=crearNodo(dato);
+        setSiguiente(nuevoNodo,pila->primero);
+        pila->primero=nuevoNodo;
+    };
 
 
 
@@ -114,54 +100,54 @@ void apilar(Pila pila, void * dato){
 ///NODO
 
 Nodo crearNodo(void * dato){
-    Nodo nodo=(Nodo)malloc(sizeof(struct NodoE));
-    nodo->dato=dato;
-    nodo->sgte=NULL;
-    return nodo;
-}
+        Nodo nodo=(Nodo)malloc(sizeof(struct NodoE));
+        nodo->dato=dato;
+        nodo->sgte=NULL;
+        return nodo;
+    };
 
 
 Nodo destruirNodo(Nodo nodo){
-    // la destrucción del dato queda por cuenta del usuario
-    free(nodo);
-    return NULL;
-}
+        // la destrucción del dato queda por cuenta del usuario
+        free(nodo);
+        return NULL;
+    };
 
 
 
 void setDato(Nodo nodo, void* dato){
-    nodo->dato=dato;
-}
+        nodo->dato=dato;
+    };
 
 
-void * getDato(Nodo nodo){
-    return nodo->dato;
-}
+void * getDatoP(Nodo nodo){
+        return nodo->dato;
+    };
 
 
 void setSiguiente(Nodo esteNodo, Nodo siguienteNodo){
-    esteNodo->sgte=siguienteNodo;
-}
+        esteNodo->sgte=siguienteNodo;
+    };
 
 
 Nodo getSiguiente(Nodo nodo){
-    return nodo->sgte;
-}
+        return nodo->sgte;
+    };
 void* obtenerDatoP (Nodo e){
-
-
-return e->dato;//retora el dato
-};
+        return e->dato;//retora el dato
+    };
 Nodo getNodoP(Pila pila){
-return pila->primero;
+        return pila->primero;
 
 
-};
-int estaVaciaP(Pila pila) {
-    if (pila == NULL)
-        return -1;
+    };
 
-    if (pila->primero == NULL)
-        return 1;
-    return 0;
-}
+int estaVaciaP(Pila pila){
+        if (pila == NULL){
+            return ESTRUCTURA_NO_INICIALIZADA;
+        }
+        if (pila->primero == NULL){
+            return TRUE;
+        }
+        return FALSE;
+    };

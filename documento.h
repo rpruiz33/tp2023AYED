@@ -7,4 +7,5 @@ Documento crearDocumento();
 void destruir (Documento d);
 void mostrarDocumento(Documento d);
 int mostrarElementoEncolado(Cola c);
+void mostrarFecha();
 #endif // DOCUMENTO_H_INCLUDED

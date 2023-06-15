@@ -1,220 +1,153 @@
-
 #include<stdio.h>
 #include<stdlib.h>
-
 #include "cola.h"
 
 struct NodoE{
-  void * item;
-  Nodo prox;
-};
+        void * item;
+        Nodo prox;
+    };
 
-
-
- struct ColaE {
-  Nodo inicio;
-  int tam;
-};
+struct ColaE {
+        Nodo inicio;
+        int tam;
+    };
 
 
 
 Cola crearCola() {
-    Cola cola = malloc(sizeof(*cola));
-    if (cola == NULL)
-        return NULL;
-    cola->inicio = NULL;
-    cola->tam = 0;
-    return cola;
-}
+        Cola cola = malloc(sizeof(*cola));
+            if (cola == NULL){
+            return NULL;
+        }
+        cola->inicio = NULL;
+        cola->tam = 0;
+        return cola;
+    }
 
 int liberarCola(Cola cola) {
-    if (cola == NULL)
-        return ESTRUCTURA_NO_INICIALIZADA;
-
-    // remove todos os elementos da cola
-    while(!estaVacia(cola)){
-        desencolar(cola);}
-
-    free(cola);
-    cola->inicio = NULL;
-
-
-
-    return OK;
-}
+        if (cola == NULL){
+            return NULL;
+        }
+        while(!estaVacia(cola)){
+            desencolar(cola);
+        }
+        free(cola);
+        cola->inicio = NULL;
+        return OK;
+    }
 
 int estaVacia(Cola cola) {
-    if (cola == NULL)
-        return ESTRUCTURA_NO_INICIALIZADA;
-
-    if (cola->inicio == NULL)
-        return TRUE;
-    return FALSE;
-}
-
-Nodo crearNo(void * item, Nodo prox) {
-	Nodo  no = malloc(sizeof(*no));
-	if (no == NULL)
-        return NULL;
-	no->item = item;
-	no->prox = prox;
-	return no;
-}
+        if (cola == NULL){
+            return NULL;
+        }
+        if (cola->inicio == NULL){
+            return TRUE;
+        }
+        return FALSE;
+    }
 
 
 int encolar(Cola cola, void * item) {
+        int pos = cola->tam;
+        if (cola == NULL){
+            return NULL;
+        }
+        if (pos < 0 || pos > cola->tam){
+        return NULL;
+        }
+        if (pos == 0) {
+            if (cola == NULL){
+                return NULL;
+            }
+            Nodo  nuevoNodo = crearNodo(item, cola->inicio);
+            if (nuevoNodo == NULL){
+                return NULL;
+            }
+            cola->inicio = nuevoNodo;
+            cola->tam++;
+            return 1;
 
-    int pos = cola->tam;
-
-    if (cola == NULL)
-        return ESTRUCTURA_NO_INICIALIZADA;
-    if (pos < 0 || pos > cola->tam)
-        return INDICE_INVALIDO;
 
 
-    if (pos == 0) {
 
-
-        if (cola == NULL)
-            return ESTRUCTURA_NO_INICIALIZADA;
-
-        Nodo  nuevoNodo = crearNodo(item, cola->inicio);
-
-        if (nuevoNodo == NULL)
-            return ESTRUCTURA_NO_INICIALIZADA;
-
-        cola->inicio = nuevoNodo;
+        }
+        else {
+            // prepara para inserir
+            Nodo  aux;
+            aux = cola->inicio;
+            for(int i = 0; i < pos - 1; i++) {
+                aux = aux->prox;
+            }
+            // adiciona o n�
+            Nodo nuevoNodo = crearNodo(item, aux->prox);
+                if (nuevoNodo == NULL)
+            return NULL;
+            aux->prox = nuevoNodo;
+        }
         cola->tam++;
         return OK;
+    }
 
-
-
-
-    } else {
-        // prepara para inserir
-        Nodo  aux;
-        aux = cola->inicio;
-        for(int i = 0; i < pos - 1; i++) {
-            aux = aux->prox;
+int desencolar(Cola cola) {
+        if (cola == NULL)
+            return NULL;
+        if (estaVacia(cola)){
+            printf("\nError: La cola esta vacia\n");
+            return NULL;
         }
-
-        // adiciona o n�
-        Nodo nuevoNodo = crearNodo(item, aux->prox);
-        if (nuevoNodo == NULL)
-            return ESTRUCTURA_NO_INICIALIZADA;
-        aux->prox = nuevoNodo;
+        Nodo  aux = cola->inicio;
+        cola->inicio = aux->prox;
+        free(aux);
+        aux = NULL;
+        cola->tam--;
+        return OK;
     }
-    cola->tam++;
-    return OK;
-}
-
-
-/*//Función para desencolar un elemento del frente de la cola
-int desencolar(Cola cola) {
-    if (estaVacia(cola))
-        {
-        printf("Error: La cola está vacía\n");
-        return -1; // o cualquier otro valor de error que desees utilizar
-    }
-    Nodo inicio=cola->inicio;
-    int dato = inicio->item;
-
-    cola->inicio = cola->inicio->prox;
-    free(inicio);
-
-
-
-    return dato;
-}
-*/
-
-
-int desencolar(Cola cola) {
-    if (cola == NULL)
-        return ESTRUCTURA_NO_INICIALIZADA;
-    if (estaVacia(cola)){
-        printf("\nError: La cola esta vacia\n");
-        return ESTRUCTURA_VACIA;
-    }
-
-    Nodo  aux = cola->inicio;
-
-    cola->inicio = aux->prox;
-    free(aux);
-    aux = NULL;
-    cola->tam--;
-
-    return OK;
-
-}
 
 
 int obtenerElemento(Cola cola, void* item, int pos) {
+        if (cola == NULL){
+            return NULL;
+        }
+        if (estaVacia(cola)){
+            return NULL;
+        }
+        if (pos < 0 || pos >= cola->tam){
+            return NULL;
+        }
+        if (item == NULL){
+            return NULL;
+        }
+        Nodo  aux;
+        aux = cola->inicio;
+        for(int i = 0; i < pos; i++) {
+            aux = aux->prox;
+        }
+        item = aux->item;
 
-    if (cola == NULL)
-        return ESTRUCTURA_NO_INICIALIZADA;
-
-    if (estaVacia(cola))
-        return ESTRUCTURA_VACIA;
-
-    if (pos < 0 || pos >= cola->tam)
-        return INDICE_INVALIDO;
-
-
-    if (item == NULL)
-        return PARAMETRO_INVALIDO;
-
-    Nodo  aux;
-    aux = cola->inicio;
-    for(int i = 0; i < pos; i++) {
-        aux = aux->prox;
+        return OK;
     }
-    item = aux->item;
-
-    return OK;
-}
 void* obtenerDato (Nodo e){
-
-
-return e->item;//retora el dato
-};
+        return e->item;//retora el dato
+    };
 int obtenerTamanio(Cola cola, int* tam) {
+        if (cola == NULL){
+            return NULL;
+        }
+        if (tam == NULL){
+            return NULL;
+        }
+        *tam = cola->tam;
 
 
 
 
-    if (cola == NULL)
-        return ESTRUCTURA_NO_INICIALIZADA;
-    if (tam == NULL)
-        return PARAMETRO_INVALIDO;
-
-    *tam = cola->tam;
-
-
-
-
-    return OK;
-}
+        return OK;
+    }
 
 Nodo getNodo(Cola cola){
-return cola->inicio;
+        return cola->inicio;
+    };
 
-
-};
-
-/*void imprimir(Cola cola) {
-    int qtdeElementos;
-    obtenerTamanio(cola, &qtdeElementos);
-    printf("[");
-    for(int i = 0;i < qtdeElementos; i++) {
-        Persona el;
-        obtenerElemento(cola, &el, i);
-        mostrarPersona(el);
-    }
-    printf("]\n");
-}*/
 int getTamanio(Cola cola){
-
-return cola->tam;
-
-};
+        return cola->tam;
+    };
