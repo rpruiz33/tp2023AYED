@@ -41,9 +41,15 @@ Sistema crearSistema(char nombre[20],char resolucion[20], int anioCompro,int can
                 case 1:
                     i1=crearImpresora();
                     apilar(p,&i1);
+                     printf("\n******************************ELEMENTO APILADO***********************************\n");
                     mostrarElementoApilado(p);
+                    printf("\n**********************************************************************************\n");
+
+                      system ("PAUSE()");
+                    system("cls");
                 break;
                 case 2:
+
                     desapilar(p);
                 break;
                 case 3:

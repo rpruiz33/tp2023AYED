@@ -74,9 +74,6 @@ void mostrarFecha(FechaP f){
         }else{
             printf("\nError formateando fecha\n");
         }
-        strcpy(f->fechaJuego,"domingo");
-        printf(a,"\nfecha de juego %s\n",f->fechaJuego);
-        fprintf(a,"\n fecha de emision %s\n",fechaHora);
         fclose(a);
     }
 

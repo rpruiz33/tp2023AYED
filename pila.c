@@ -93,12 +93,6 @@ void apilar(Pila pila, void * dato){
 
 
 
-
-
-
-
-///NODO
-
 Nodo crearNodo(void * dato){
         Nodo nodo=(Nodo)malloc(sizeof(struct NodoE));
         nodo->dato=dato;

@@ -424,7 +424,7 @@
 	<stdlib.h>
 	"cola.h"
 
-1686664737 c:\users\beto\desktop\tp ayed 2023\tp2023ayed\cola.h
+1686859372 c:\users\beto\desktop\tp ayed 2023\tp2023ayed\cola.h
 
 1686785048 source:c:\users\beto\desktop\tp ayed 2023\tp2023ayed\documento.c
 	<stdio.h>
@@ -449,7 +449,7 @@
 
 1686672253 c:\users\beto\desktop\tp ayed 2023\tp2023ayed\documento.h
 
-1686786291 source:c:\users\beto\desktop\tp ayed 2023\tp2023ayed\impresora.c
+1686853393 source:c:\users\beto\desktop\tp ayed 2023\tp2023ayed\impresora.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -473,12 +473,12 @@
 	<string.h>
 	<time.h>
 
-1686784533 source:c:\users\beto\desktop\tp ayed 2023\tp2023ayed\pila.c
+1686853106 source:c:\users\beto\desktop\tp ayed 2023\tp2023ayed\pila.c
 	<stdio.h>
 	<stdlib.h>
 	"pila.h"
 
-1686786777 source:c:\users\beto\desktop\tp ayed 2023\tp2023ayed\sistema.c
+1686853106 source:c:\users\beto\desktop\tp ayed 2023\tp2023ayed\sistema.c
 	<stdio.h>
 	<stdlib.h>
 	"cola.h"
@@ -489,7 +489,7 @@
 	<string.h>
 	"sistema.h"
 
-1686784533 source:c:\users\beto\desktop\tp ayed 2023\tp2023ayed\fecha.c
+1686853526 source:c:\users\beto\desktop\tp ayed 2023\tp2023ayed\fecha.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

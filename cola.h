@@ -41,5 +41,5 @@ int obtenerTamanio(Cola cola, int* tam);
 void* obtenerDato (Nodo e);
 void* getData (Nodo actual);
 void imprimir(Cola cola);
-int getTamanio(Cola cola);
+//int getTamanio(Cola cola);
 #endif // COLA_H_INCLUDED

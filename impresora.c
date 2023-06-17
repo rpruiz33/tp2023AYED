@@ -35,7 +35,7 @@ Impresora crearImpresora(){
             printf("\n****************************MENU PARA ENCOLAR DOCUMENTOS************************************\n");
             printf("\ningrese 1 para encolar documentos en impresora y mostrarlo\n");
             printf("\ningrese 2 para desencolarar documentos en la impresora\n");
-            printf("\ningrese 3 para volver\n");
+            printf("\ningrese 0 para volver\n");
             printf("\n********************************************************************************************\n");
             scanf("%d",&op);
             switch(op){
@@ -50,10 +50,8 @@ Impresora crearImpresora(){
                 break;
                 case 2:
                     desencolar(p);
-                break;
-                case 3:
+                    system ("PAUSE()");
                     system("cls");
-                    op=0;
                 break;
             }
         }while(op!=0);
