@@ -18,7 +18,7 @@ struct documentoE{
     };
 Documento crearDocumento(){
         Documento d=malloc(sizeof (struct documentoE));
-        printf("\ningrese el nombre del documeto\n");
+        printf("\ningrese el nombre del documento\n");
         fflush(stdin);
         gets(d->nombreDocumento);
         d->f=crearFecha();

@@ -28,18 +28,15 @@ Cola crearCola();
 
 int liberarCola(Cola cola);
 int estaVacia(Cola cola);
-
-
+Nodo crearNodoC(void * item,Nodo prox);
+Nodo destruirNodo(Nodo nodo);
 int encolar(Cola cola, void* item);
-
 int desencolar(Cola cola);
-
 Nodo getNodo(Cola cola);
 int obtenerElemento(Cola cola, void* item, int pos);
 int obtenerTamanio(Cola cola, int* tam);
-
 void* obtenerDato (Nodo e);
 void* getData (Nodo actual);
 void imprimir(Cola cola);
-//int getTamanio(Cola cola);
+int getTamanio(Cola cola);
 #endif // COLA_H_INCLUDED

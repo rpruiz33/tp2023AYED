@@ -505,3 +505,89 @@
 
 1686675143 c:\users\beto\desktop\tp ayed 2023\tp2023ayed\fecha.h
 
+1687013568 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp2023ayed\tp2023ayed\cola.c
+	<stdio.h>
+	<stdlib.h>
+	"cola.h"
+
+1687014580 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp2023ayed\tp2023ayed\cola.h
+
+1687014730 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp2023ayed\tp2023ayed\documento.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	"documento.h"
+	<time.h>
+	"fecha.h"
+
+1687008018 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp2023ayed\tp2023ayed\sistema.h
+
+1687008018 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp2023ayed\tp2023ayed\impresora.h
+	"pila.h"
+
+1687014580 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp2023ayed\tp2023ayed\pila.h
+
+1687008018 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp2023ayed\tp2023ayed\documento.h
+
+1687008018 c:\users\beto\documents\finales hechos 2023\final mayo2022\tp2023ayed\tp2023ayed\fecha.h
+
+1687009022 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp2023ayed\tp2023ayed\fecha.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	"documento.h"
+	"fecha.h"
+	<time.h>
+
+1687015110 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp2023ayed\tp2023ayed\impresora.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	"documento.h"
+
+1687015461 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp2023ayed\tp2023ayed\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	<time.h>
+
+1687008018 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp2023ayed\tp2023ayed\pila.c
+	<stdio.h>
+	<stdlib.h>
+	"pila.h"
+
+1687014925 source:c:\users\beto\documents\finales hechos 2023\final mayo2022\tp2023ayed\tp2023ayed\sistema.c
+	<stdio.h>
+	<stdlib.h>
+	"cola.h"
+	"sistema.h"
+	"impresora.h"
+	"pila.h"
+	"sistema.h"
+	<string.h>
+	"sistema.h"
+

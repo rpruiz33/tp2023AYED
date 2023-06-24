@@ -26,7 +26,7 @@ Cola crearCola() {
 
 int liberarCola(Cola cola) {
         if (cola == NULL){
-            return NULL;
+            return -1;
         }
         while(!estaVacia(cola)){
             desencolar(cola);
@@ -35,10 +35,17 @@ int liberarCola(Cola cola) {
         cola->inicio = NULL;
         return OK;
     }
-
+Nodo crearNodoC(void * item, Nodo prox) {
+	Nodo  no = malloc(sizeof(*no));
+	if (no == NULL)
+        return NULL;
+	no->item = item;
+	no->prox = prox;
+	return no;
+}
 int estaVacia(Cola cola) {
         if (cola == NULL){
-            return NULL;
+            return -1;
         }
         if (cola->inicio == NULL){
             return TRUE;
@@ -50,18 +57,18 @@ int estaVacia(Cola cola) {
 int encolar(Cola cola, void * item) {
         int pos = cola->tam;
         if (cola == NULL){
-            return NULL;
+            return -1;
         }
         if (pos < 0 || pos > cola->tam){
-        return NULL;
+        return -1;
         }
         if (pos == 0) {
             if (cola == NULL){
-                return NULL;
+                return -1;
             }
-            Nodo  nuevoNodo = crearNodo(item, cola->inicio);
+            Nodo  nuevoNodo = crearNodoC(item, cola->inicio);
             if (nuevoNodo == NULL){
-                return NULL;
+                return -1;
             }
             cola->inicio = nuevoNodo;
             cola->tam++;
@@ -79,9 +86,9 @@ int encolar(Cola cola, void * item) {
                 aux = aux->prox;
             }
             // adiciona o n�
-            Nodo nuevoNodo = crearNodo(item, aux->prox);
+            Nodo nuevoNodo = crearNodoC(item, aux->prox);
                 if (nuevoNodo == NULL)
-            return NULL;
+            return -1;
             aux->prox = nuevoNodo;
         }
         cola->tam++;
@@ -90,32 +97,33 @@ int encolar(Cola cola, void * item) {
 
 int desencolar(Cola cola) {
         if (cola == NULL)
-            return NULL;
+            return -1;
         if (estaVacia(cola)){
             printf("\nError: La cola esta vacia\n");
-            return NULL;
+            return -1;
         }
         Nodo  aux = cola->inicio;
         cola->inicio = aux->prox;
         free(aux);
         aux = NULL;
         cola->tam--;
+
         return OK;
     }
 
 
 int obtenerElemento(Cola cola, void* item, int pos) {
         if (cola == NULL){
-            return NULL;
+            return -1;
         }
         if (estaVacia(cola)){
-            return NULL;
+            return -1;
         }
         if (pos < 0 || pos >= cola->tam){
-            return NULL;
+            return -1;
         }
         if (item == NULL){
-            return NULL;
+            return -1;
         }
         Nodo  aux;
         aux = cola->inicio;
@@ -127,14 +135,14 @@ int obtenerElemento(Cola cola, void* item, int pos) {
         return OK;
     }
 void* obtenerDato (Nodo e){
-        return e->item;//retora el dato
+        return e->item;
     };
 int obtenerTamanio(Cola cola, int* tam) {
         if (cola == NULL){
-            return NULL;
+            return -1;
         }
         if (tam == NULL){
-            return NULL;
+            return -1;
         }
         *tam = cola->tam;
 

@@ -37,6 +37,7 @@ void mostrarFecha(FechaP f){
         f->bytesEscritos=strftime(fechaHora, sizeof  fechaHora, f->formato, &tiempoLocal);
         if (f->bytesEscritos != 0) {
             printf("\nFecha y hora: %s\n", fechaHora);
+            fprintf(a,"%s",fechaHora);
             f->fechaEmision= (tiempoLocal.tm_wday);
             switch(f->fechaEmision){
                 case 0:

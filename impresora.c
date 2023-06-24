@@ -40,6 +40,7 @@ Impresora crearImpresora(){
             scanf("%d",&op);
             switch(op){
                 case 1:
+                    system("cls");
                     i->d=crearDocumento();
                     encolar( p, &i->d);
                     printf("\n******************************ELEMENTO ENCOLADO***********************************\n");

@@ -54,6 +54,8 @@ Sistema crearSistema(char nombre[20],char resolucion[20], int anioCompro,int can
                 break;
                 case 3:
                     mostrarSistema(s);
+                       system ("PAUSE()");
+                    system("cls");
                 break;
             }
         }while(op!=0);
@@ -86,13 +88,13 @@ void iniciarSistema(){
             r= validarSistema(nombre);
         }
         printf("\n!!VALIDACION CORRECTA!!!\n");
-        printf("\nlingrese la resolucion de su sistema <-- x32--x86--x64-->\n");
+        printf("\nlingrese la arquitectura de su sistema <-- x32--x86--x64-->\n");
         fflush(stdin);
         gets(resolucion);
         resultado= validarResolucion(resolucion);
         while(resultado==-1){
             printf("!!VALIDACION INCORRECTA!!");
-            printf("\nlingrese de nuevo la resolucion de su sistema <-- x32--x86--x64-->\n");
+            printf("\nlingrese de nuevo la arquitectura de su sistema <-- x32--x86--x64-->\n");
             fflush(stdin);
             gets(resolucion);
             resultado= validarResolucion(resolucion);
@@ -129,7 +131,7 @@ void liberarSistema(Sistema s){
 
     };
 void mostrarSistema(Sistema s){
-        printf("\nel nombre del sistema es %s\nla resolucion del sistema es %s\nel anio de adquisicion del sistema es %d\nla cantidad Memoria Ram Minima En Gigas es %d \n",s->nombre,s->resolucion,s->anioCompro,s->cantidadMemoriaRamMinimaEnGigas);
+        printf("\nel nombre del sistema es %s\nla arquitectura del sistema es %s\nel anio de adquisicion del sistema es %d\nla cantidad Memoria Ram Minima En Gigas es %d \n",s->nombre,s->resolucion,s->anioCompro,s->cantidadMemoriaRamMinimaEnGigas);
 
 
     };
